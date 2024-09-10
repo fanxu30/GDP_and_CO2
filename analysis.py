@@ -15,10 +15,9 @@ my_chart = (
         x="GDP per capita (constant 2010 US$)",
         y="Mortality rate, under-5 (per 1,000 live births)",
     )
-    .add(so.Line(), so.PolyFit(order=2))
     .add(so.Dot())
     .label(title="Log GDP and Under-5 Mortality")
     .theme({**style.library["seaborn-v0_8-whitegrid"]})
 )
 
-my_chart
+my_chart.show()
